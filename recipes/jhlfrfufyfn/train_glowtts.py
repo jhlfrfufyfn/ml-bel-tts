@@ -16,14 +16,14 @@ from TTS.tts.utils.text.tokenizer import TTSTokenizer
 from TTS.utils.audio import AudioProcessor
 
 # we use the same path as this script as our training folder.
-output_path = os.path.dirname(os.path.abspath(__file__))
+output_path = '/storage/output'
 
 
 # DEFINE DATASET CONFIG
 # Set LJSpeech as our target dataset and define its path.
 # You can also use a simple Dict to define the dataset and pass it to your custom formatter.
 dataset_config = BaseDatasetConfig(
-    formatter="bel_tts_formatter", meta_file_train="ipa_final_dataset.csv", path=os.path.join(output_path, "/home/jhlfrfufyfn/dev/diplom/filtered_dataset/")
+    formatter="bel_tts_formatter", meta_file_train="ipa_final_dataset.csv", path=os.path.join(output_path, "/storage/filtered_dataset/")
 )
 
 characters=CharactersConfig(
@@ -40,7 +40,7 @@ audio_config = BaseAudioConfig(
     mel_fmin=50,
     mel_fmax=8000,
     hop_length=256,
-    stats_path="/home/jhlfrfufyfn/dev/diplom/TTS/scale_stats.npy",
+    stats_path="/storage/diplom-bel-tts/scale_stats.npy",
 )
 
 # INITIALIZE THE TRAINING CONFIGURATION

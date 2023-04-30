@@ -40,7 +40,7 @@ audio_config = BaseAudioConfig(
     mel_fmin=50,
     mel_fmax=8000,
     hop_length=256,
-    stats_path="/storage/diplom-bel-tts/scale_stats.npy",
+    stats_path="/storage/TTS/scale_stats.npy",
 )
 
 # INITIALIZE THE TRAINING CONFIGURATION

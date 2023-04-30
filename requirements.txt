@@ -29,3 +29,19 @@ matplotlib
 trainer==0.0.20
 # config management
 coqpit>=0.0.16
+# chinese g2p deps
+jieba
+pypinyin
+# japanese g2p deps
+mecab-python3==1.0.5
+unidic-lite==1.0.8
+# gruut+supported langs
+gruut[de]==2.2.3
+# deps for korean
+jamo
+nltk
+g2pkk>=0.1.1
+# deps for bangla
+bangla==0.0.2
+bnnumerizer
+bnunicodenormalizer==0.1.1

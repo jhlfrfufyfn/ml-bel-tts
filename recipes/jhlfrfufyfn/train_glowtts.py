@@ -67,6 +67,7 @@ config = GlowTTSConfig(
     save_best_after=5000,
     text_cleaner="no_cleaners",
     audio=audio_config,
+    test_sentences=[],
 )
 
 # INITIALIZE THE AUDIO PROCESSOR

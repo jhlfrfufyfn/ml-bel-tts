@@ -18,12 +18,12 @@ audio_config = BaseAudioConfig(
 )
 
 config = HifiganConfig(
-    batch_size=128,
-    eval_batch_size=64,
+    batch_size=64,
+    eval_batch_size=32,
     num_loader_workers=8,
     num_eval_loader_workers=8,
-    lr_disc=0.0004,
-    lr_gen=0.0004,
+    lr_disc=0.0003,
+    lr_gen=0.0003,
     run_eval=True,
     test_delay_epochs=5,
     epochs=1000,

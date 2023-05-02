@@ -2,6 +2,7 @@ import os
 
 from trainer import Trainer, TrainerArgs
 from TTS.TTS.config.shared_configs import BaseAudioConfig
+from coqpit import Coqpit
 
 from TTS.utils.audio import AudioProcessor
 from TTS.vocoder.configs.hifigan_config import *;
@@ -41,6 +42,10 @@ config = HifiganConfig(
     output_path=output_path,
     audio=audio_config,
 )
+
+config = Coqpit()
+config.load_json("/storage/output/config.json")
+
 
 # init audio processor
 ap = AudioProcessor.init_from_config(config)

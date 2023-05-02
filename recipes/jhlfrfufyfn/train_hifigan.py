@@ -43,10 +43,6 @@ config = HifiganConfig(
     audio=audio_config,
 )
 
-config = Coqpit()
-config.load_json("/storage/output/config.json")
-
-
 # init audio processor
 ap = AudioProcessor.init_from_config(config)
 

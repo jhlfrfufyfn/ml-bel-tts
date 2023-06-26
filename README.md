@@ -4,6 +4,8 @@ In this project I use a fork from [Coqui-TTS](https://github.com/coqui-ai/TTS/tr
 framework to train a TTS model for the Belarusian language.
 
 Everything you need to know about the framework and how to use it to train and generate speech is written in the [documentation](https://tts.readthedocs.io/en/latest/index.html). Here I will only describe the steps I took to train the model.
+
+> Created TTS system for Belarusian language is deployed on a server [here](https://nikuchin.fun/tts), and on [Huggingface](https://huggingface.co/jhlfrfufyfn/bel-tts).
 ## Installation
 If you are only interested in [synthesizing speech](https://tts.readthedocs.io/en/latest/inference.html) with the released 🐸TTS models, installing from PyPI is the easiest option.
 
